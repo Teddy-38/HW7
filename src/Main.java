@@ -44,5 +44,18 @@ public class Main {
         }
         System.out.println();
         System.out.println("Task5");
+        int deposit3 = 15000;
+        double monthlyPercent3 = 0.07;
+        int totalAmount3 = 12_000_000;
+        int numberMonth3 = 6;
+        while (deposit3 <= totalAmount3) {
+            deposit3 += deposit3 * monthlyPercent3;
+            deposit3 += deposit3 * monthlyPercent3;
+            deposit3 += deposit3 * monthlyPercent3;
+            deposit3 += deposit3 * monthlyPercent3;
+            deposit3 += deposit3 * monthlyPercent3;
+            deposit3 += deposit3 * monthlyPercent3;
+            System.out.print(" Месяц " + numberMonth3 + ", сумма накоплений " + deposit3);
+            numberMonth3 = numberMonth3+6;}
     }
 }
