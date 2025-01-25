@@ -59,13 +59,30 @@ public class Main {
         System.out.println("Task6");
         int deposit4 = 15000;
         double monthlyPercent4 = 0.07;
-        int totalMouth = 12*9;
+        int totalMouth = 12 * 9;
         int numberMonth4 = 0;
         while (numberMonth4 < totalMouth) {
             deposit4 += deposit4 * monthlyPercent4;
             numberMonth4++;
             if (numberMonth4 % 6 == 0) {
-            System.out.print (" Месяц " + numberMonth4 + ", сумма накоплений " + deposit4);}
+                System.out.print(" Месяц " + numberMonth4 + ", сумма накоплений " + deposit4);
+            }
+        }
+        System.out.println();
+        System.out.println("Task7");
+        int friday = 3;
+        for (int day = friday; day <= 31; day+=7){
+            System.out.println ("Сегодня пятница "+day+"-е число. Необходимо подготовить отчёт");
+        }
+        System.out.println("Task8");
+        int period = 79;
+        int startSe = 0;
+        int start1 = yearNow - 200;
+        int end1 = yearNow + 100;
+        for (int year = startSe; year < end1; year += period) {
+            if (year > start1) {
+                System.out.println(year);
+            }
         }
     }
 }
