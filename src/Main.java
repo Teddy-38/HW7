@@ -47,15 +47,26 @@ public class Main {
         int deposit3 = 15000;
         double monthlyPercent3 = 0.07;
         int totalAmount3 = 12_000_000;
-        int numberMonth3 = 6;
+        int numberMonth3 = 0;
         while (deposit3 <= totalAmount3) {
             deposit3 += deposit3 * monthlyPercent3;
-            deposit3 += deposit3 * monthlyPercent3;
-            deposit3 += deposit3 * monthlyPercent3;
-            deposit3 += deposit3 * monthlyPercent3;
-            deposit3 += deposit3 * monthlyPercent3;
-            deposit3 += deposit3 * monthlyPercent3;
-            System.out.print(" Месяц " + numberMonth3 + ", сумма накоплений " + deposit3);
-            numberMonth3 = numberMonth3+6;}
+            numberMonth3++;
+            if (numberMonth3 % 6 == 0) {
+                System.out.print(" Месяц " + numberMonth3 + ", сумма накоплений " + deposit3);
+            }
+        }
+        System.out.println();
+        System.out.println("Task6");
+        int deposit4 = 15000;
+        double monthlyPercent4 = 0.07;
+        int totalMouth = 12*9;
+        int numberMonth4 = 0;
+        while (numberMonth4 < totalMouth) {
+            deposit4 += deposit4 * monthlyPercent4;
+            numberMonth4++;
+            if (numberMonth4 % 6 == 0) {
+            System.out.print (" Месяц " + numberMonth4 + ", сумма накоплений " + deposit4);}
+        }
     }
 }
+
