@@ -17,10 +17,8 @@ public class Main {
             start = start + 1;
         }
         System.out.println();
-        int start2 = 10;
-        while (start2 > 0) {
-            System.out.print(start2 + " ");
-            start2 = start2 - 1;
+        for (int i = 10; i >= 1; i-- ) {
+            System.out.print(i + " ");
         }
         System.out.println();
         System.out.println("Task3");
